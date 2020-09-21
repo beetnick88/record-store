@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RecordStore</title>
+    <title>Record Store</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %> 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-    <%= yield %>
+    <div class="container">
+      <header class="header_content">
+      <div class="header_inner">
+          <div class="header_subtitle"><h4>レコードショップを使おう</h4></div>
+          <h1 class="header_title">Record Store</h1>
+        </div>
+      <ul class="nav_tab">
+          <li class="nav_table"><%= link_to "MixCD Buy",products_path %></li>
+          <li class="nav_table"><%= link_to "MixCD Review",products_path %></li>
+          <li class="nav_table"><%= link_to "Record Buy",products_path %></li>
+          <li class="nav_table"> <%= link_to "Record Review",products_path %></li>
+          <li class="nav_table"><%= link_to "Login/ Register",sessions_new_path %></li>
+      </ul>
+      <%= yield %>
+      <footer>
+        <p>
+          Copyright PicTweet 2019.
+        </p>
+      </footer>
+    </div>
   </body>
 </html>

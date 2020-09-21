@@ -1,3 +1,53 @@
-// Place all the styles related to the products controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+.container{
+  height: 1000px;
+  background-color: #59d6d0;
+}
+
+.header_content{
+  background-color: #59d6d0;
+  border-top: 5px solid #000000;
+  border-bottom: 5px solid #c7760d;
+.header_title{
+  text-decoration: none;
+}
+.header_inner{
+  padding: 0 0 140px;
+  border: 1px solid blue;
+
+.header_subtitle{
+  display: block;
+  font-size: 2px;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+}
+.nav_tab{
+  display:flex;
+  background-color:#c7760d;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  border: 1px solid black;
+  height: 90px;
+  .nav_table{
+    box-sizing: border-box;
+    padding: 15px;
+    height: 100%;
+    width: 120px;
+    background-color:#c7760d;
+    color:#fff;
+  }
+}
+li{
+  font-size:20px;
+  text-align: center;
+  
+}
+a{
+  text-decoration: none;
+}
+
+}

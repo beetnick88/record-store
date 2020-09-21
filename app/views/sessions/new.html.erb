@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Record Shop</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %> 
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+          <button type="button" class="toggle-btn" onclick="register()">register</button>
+        </div>
+        <div class="social-icons">
+          <%= image_tag 'fb.png' %>
+          <%= image_tag 'tw.png' %>
+          <%= image_tag 'gp.png' %>
+        </div>
+      <%# <%= form_tag users_path do %>   
+        <form id="login" class="input-group">
+          <input type="text" class="input-field" placeholder="User Id" 
+          repuired>
+          <input type="text" class="input-field" placeholder="Enter Password" 
+          repuired>
+          <input type="checkbox" class="check-box"><span>Remember Password</span> 
+          <button type="submit" class="submit-btn">Log in</button>
+        </form>
+        <form id="register" class="input-group">
+          <input type="text" class="input-field" placeholder="User Id" repuired>
+          <input type="email" class="input-field" placeholder="Email" repuired>
+          <input type="text" class="input-field" placeholder="Enter Password" 
+          repuired>
+          <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span> 
+          <button type="submit" class="submit-btn">Register</button>
+        </form>
+      </div>
+  </body>
+</html>
