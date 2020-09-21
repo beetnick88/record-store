@@ -26,8 +26,6 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
-gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
-
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
@@ -58,3 +56,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bcrypt',  '3.1.12'
 gem 'mysql2', '>= 0.4.4', '< 0.6.0'
 gem 'pry-rails'
+gem 'bootstrap-sass'
+group :development, :production, :test do
+  gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+end
