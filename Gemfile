@@ -57,6 +57,7 @@ gem 'bcrypt',  '3.1.12'
 gem 'mysql2', '>= 0.4.4', '< 0.6.0'
 gem 'pry-rails'
 gem 'bootstrap-sass'
+gem 'payjp'
 group :development, :production, :test do
   gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 end
